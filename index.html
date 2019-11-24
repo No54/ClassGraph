@@ -7,15 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ClassGraph</title>
     <script src="lib/vis-network.min.js"></script>
+    <script src="lib/fileFinder.js"></script>
     <script src="lib/func.js"></script>
 </head>
 
 <body>
     <span>Please input a path for .cs files:</span><br>
-    <input type="text" id="filesPath">
+    <input type="text" id="filesPath" style="width:400px">
     <button id="submitBtn" onclick="init()">confirm</button><br>
     <div id="visNetWorkDiv"></div>
- 
+    <script>
+        var fileSet =[];
+    </script>
 </body>
 
 </html>

@@ -17,7 +17,7 @@ The arrow from 'Testing.Utility' to 'Testing.test' means 'Testing.test' calls 'T
 I am handling a big C# project which has many classes calling each other.  
 So I want a software to analyze the relationship among the classes.  
 Since the 'codemap' is not in the community version of Visual Studio.  
-And another VS plugin called '[Code graph](https://github.com/league1991/CodeAtlasVsix)' is a very cool software, but it seems too complicated.
+And another VS plugin called '[Code graph](https://github.com/league1991/CodeAtlasVsix)' is a very cool software, but it seems too complicated.  
 As a result, I do it by myself.
 I learn to use electron to transfer the awesome '[vis-network](https://github.com/visjs/vis-network)' to the desktop.
 

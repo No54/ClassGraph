@@ -1,0 +1,16 @@
+{
+  "name": "classgraph",
+  "version": "1.0.0",
+  "description": "make a class graph for .cs files",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package":"electron-packager . classgraph --out out --arch=x64 --overwrite --ignore=node_modules --electron-version=7.1.2 --icon=icon.ico"
+  },
+  "keywords": [
+    "class","graph"
+  ],
+  "author": "pippo",
+  "license": "MIT"
+}

@@ -23,5 +23,5 @@ I learn to use electron to transfer the awesome '[vis-network](https://github.co
 
 ## But...
 To compare with the great softwares above, this repo is too simple and the code is not cool at all. But I think the requirements are clear.  
-So, if you are interested in this repo, please promote the code and make it more useful. 
+So, if you are interested in this repo, please promote the code and make it more useful.  
 If you know other software instead, plaease tell me! Thank you!

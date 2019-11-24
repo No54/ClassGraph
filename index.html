@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>ClassGraph</title>
+    <script src="lib/vis-network.min.js"></script>
+    <script src="lib/func.js"></script>
 </head>
+
 <body>
-    <h1>hello new electron</h1>
+    <span>Please input a path for .cs files:</span><br>
+    <input type="text" id="filesPath">
+    <button id="submitBtn" onclick="init()">confirm</button><br>
+    <div id="visNetWorkDiv"></div>
+ 
 </body>
+
 </html>

@@ -2,11 +2,17 @@
 
 const { app, BrowserWindow } = require('electron');
 
+const electron = require('electron');
 // 保持对window对象的全局引用，如果不这么做的话，当JavaScript对象被
 // 垃圾回收的时候，window对象将会自动的关闭
 let win;
+let menu = electron.Menu;
 
 function createWindow () {
+  
+  // 隐藏菜单栏
+  menu.setApplicationMenu(null);
+
   // 创建浏览器窗口。
   win = new BrowserWindow({
     width: 800,
@@ -15,12 +21,13 @@ function createWindow () {
       nodeIntegration: true
     }
   });
+ 
 
   // 加载index.html文件
   win.loadFile('index.html');
 
   // 打开开发者工具
-  win.webContents.openDevTools();
+  //win.webContents.openDevTools();
 
   // 当 window 被关闭，这个事件会被触发。
   win.on('closed', () => {

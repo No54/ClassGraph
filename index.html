@@ -14,12 +14,22 @@
 <body>
     <span>Please input a path for .cs files:</span><br>
     <input type="text" id="filesPath" style="width:400px">
-    <button id="nodesBtn" onclick="init()">create</button><br>
-    <div id="visNetWorkDiv" style="width:770px;height:495px"></div>
+    <button id="nodesBtn" onclick="init()">create</button>
+    <button id="closePhy" onclick="cPhy()">close physics</button><br>
+    <div id="visNetWorkDiv" style="width:770px;height:495px;border: 1px;border-color: black;"></div>
     <script>
         var fileSet = [];
         var classSet = [];
         document.getElementById("filesPath").value = "";
+        window.onresize = function () {
+            var ww = document.documentElement.clientWidth;
+            var hh = document.documentElement.clientHeight;
+           
+            console.log(ww);
+            console.log(hh);
+            document.getElementById("visNetWorkDiv").style.width = (ww-25) + "px";
+            document.getElementById("visNetWorkDiv").style.height = (hh -90) + "px";
+        }
     </script>
 </body>
 
